@@ -150,18 +150,48 @@ button {
 }
 
 .conteiner {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  /* display: inline-block; */
-  /* margin: 0 auto; */
-  margin-right: auto;
-  margin-left: auto;
-  max-width: 320px;
-  padding: 0 15px;
-  background-color: #a52b41;
+ margin: 0 auto; 
+ /* padding: 0 15px; */
+ max-width: 320px;
+ background-color: #A52B41;
 }
+
 h6 {
   text-transform: uppercase;
   font: bold 18px/1.5 "Work Sans";
+}
+ul{
+  padding: 30px
+}
+li{
+  padding: 0 0 20px 0;
+}
+li:last-child {
+padding-bottom:  0;
+}
+
+.icon-1::before,
+.icon-2::before,
+.icon-3::before,
+.icon-4::before
+{
+  content: '';
+  display: block;
+  background: url(./img/399.svg) no-repeat;
+  width: 30px;
+  height: 30px;
+  float: left;
+   margin: 8px 20px 0 0 ;
+
+}
+ .icon-2::before{
+   background: url(./img/Vector.svg) no-repeat; 
+} 
+
+  .icon-3::before{
+    background: url(./img/397.svg) no-repeat;
+  }
+
+.icon-4::before{
+  background: url(./img/398.svg) no-repeat;
 }
