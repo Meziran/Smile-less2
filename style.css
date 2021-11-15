@@ -142,7 +142,7 @@ button {
 }
 a {
   text-decoration: none;
-  /* color: #ffffff; */
+  color: #ffffff;
 }
 * body {
   font-family: Work Sans;
@@ -150,7 +150,6 @@ a {
   font-style: normal;
   font-weight: 400;
   line-height: 1.5;
-  /* color: #ffffff; */
 }
 
 h6 {
@@ -160,27 +159,29 @@ h6 {
 
 .conteiner {
   margin: 0 auto;
-  /* padding: 0 15px; */
-  max-width: 320px;
   background-color: #a52b41;
 }
 
-h6 {
-  text-transform: uppercase;
-  font: bold 18px/1.5 "Work Sans";
-}
-
 .position-cont {
-  padding: 30px 0 10px;
-  /* margin: 0 auto; */
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  list-style: none;
+  align-items: center;
+  padding: 30px 0 0 0;
 }
 .ul {
   border: 1px solid green;
-  /* display: flex;
-  justify-content: center; */
+  margin: 0 0 30px 0px;
   width: 280px;
-  padding: 0 0 20px 15px;
+  padding: 0 0 0px 15px;
 }
+/* .ul:first-child {
+  margin-top: 30px;
+}
+.ul:last-child {
+  margin-bottom: 30px;
+} */
 
 .icon-1::before,
 .icon-2::before,
@@ -205,11 +206,37 @@ h6 {
 .icon-4::before {
   background: url(./img/398.svg) no-repeat;
 }
+
 @media screen and (max-width: 479px) {
   .container {
-    width: 450px;
+    min-width: 320px;
   }
-  .position-cont {
-    margin: 0 auto;
+}
+
+@media screen and (min-width: 480px) and (max-width: 767px) {
+  .container {
+    max-width: 480px;
   }
+  .ul {
+    margin: 0 30px 30px 0;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .container {
+    max-width: 768px;
+  }
+
+  .ul {
+    margin: 0 0 30px 60px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .container {
+    max-width: 1440px;
+  }
+  /* .ul {
+    margin: 0 60px 30px 0;
+  } */
 }
