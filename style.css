@@ -167,7 +167,7 @@ h6 {
   align-items: center;
   padding: 30px 0 0 0;
 }
-.ul {
+.link-list {
   /* border: 1px solid green; */
   margin: 0 0 30px 0px;
   width: 280px;
@@ -222,8 +222,8 @@ a.focus{
   .container {
     max-width: 480px;
   }
-  .ul {
-    margin: 0 30px 30px 0;
+  .link-list {
+    margin: 0 15px 30px 15px ;
   }
 }
 
@@ -232,8 +232,8 @@ a.focus{
     max-width: 768px;
   }
 
-  .ul {
-    margin: 0 0 30px 60px;
+  .link-list {
+    margin: 0 15px 30px 15px ;
   }
 }
 
@@ -241,10 +241,10 @@ a.focus{
   .container {
     max-width: 1440px;
   }
-  .ul {
+  .link-list {
     margin: 0 60px 30px 0;
   }
-  .ul:last-child{
+  .link-list:last-child{
     margin: 0 0 30px 0;
   }
 }
